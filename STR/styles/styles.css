@@ -1,0 +1,192 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #111;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #222;
+    color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px #f012be;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #f012be;
+    text-shadow: 0 0 10px #f012be;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f012be;
+}
+
+main {
+    padding-top: 5rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #ff0080, #ff8c00);
+    animation: backgroundPulse 2s infinite;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}
+
+@keyframes backgroundPulse {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.content {
+    padding: 2rem;
+    background-color: #000;
+    color: #f0f0f0;
+    box-shadow: 0 0 10px #f012be;
+    margin-bottom: 2rem;
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: #f012be;
+    text-shadow: 0 0 10px #f012be;
+}
+
+.service-cards, .gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card, .gallery img {
+    background-color: #222;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid #f012be;
+    box-shadow: 0 0 10px #f012be;
+    width: 30%;
+    min-width: 200px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: #f012be;
+    text-shadow: 0 0 10px #f012be;
+}
+
+.service-card p {
+    font-size: 1rem;
+}
+
+.gallery img {
+    max-width: 300px;
+    animation: imagePulse 2s infinite;
+}
+
+@keyframes imagePulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    background-color: #222;
+    color: #f0f0f0;
+    border: 2px solid #f012be;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+form button {
+    background-color: #f012be;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ff8c00;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #f0f0f0;
+    box-shadow: 0 0 10px #f012be;
+}
+
+#search {
+    width: 80%;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    display: block;
+    background-color: #222;
+    color: #f0f0f0;
+    border: 2px solid #f012be;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.back-link {
+    color: #f012be;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance GCZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("TU_USER_ID"); // Reemplaza TU_USER_ID con tu User ID de EmailJS
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Freelance GCZ</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="hero">
+            <h2>Bienvenido a mi mundo</h2>
+            <p>Creando experiencias digitales con estilo retro y vibrante.</p>
+        </section>
+        <section id="proyectos" class="content">
+            <h2>Proyectos</h2>
+            <div class="gallery">
+                <a href="project1.html"><img src="https://media.giphy.com/media/26xBwdIuRJiAIqHwA/giphy.gif" alt="Proyecto 1"></a>
+                <a href="project2.html"><img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="Proyecto 2"></a>
+                <a href="project3.html"><img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" alt="Proyecto 3"></a>
+            </div>
+        </section>
+        <section id="contacto" class="content">
+            <h2>Contacto</h2>
+            <p>Envíame un mensaje para comenzar tu próximo proyecto.</p>
+            <form id="contact-form">
+                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Email" required>
+                <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Freelance GCZ. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
